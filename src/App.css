@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
+body {
+  font: 400 14px Roboto, sans-serif;
+  background: #020d14;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+} 
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box; 
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: black;
+  font-Size: 1em;
+  font-Weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* App.js */
+.main-container{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+
+    
+  background: #2980B9;
+  background: -webkit-linear-gradient(to left, #2980B9, #6DD5FA, #2980B9);
+  background: linear-gradient(to left, #2980B9, #6DD5FA, #2980B9);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container h1 {
+  color: white;
+text-shadow:  3px 3px 3px rgba(0,0,0,0.80);
+}
+
+.header-style{
+  background: #2980B9;
+  background: -webkit-linear-gradient(to left, #2980B9, #6DD5FA, #2980B9);
+  background: linear-gradient(to left, #2980B9, #6DD5FA, #2980B9);
+  
+}
+
+.header-style a {
+  height: 100%;
+  transition: 0.4s;
+  opacity: 100%;
+
+
+}
+
+.header-style a:hover {
+  filter: brightness(80%);
+}
+
+/* Landingpage */
+
+.landing-grid{
+  width: 100%;
+  height: 100%;
+  
+  background: #2980B9;
+  background: -webkit-linear-gradient(to left, #2980B9, #6DD5FA, #2980B9);
+  background: linear-gradient(to left, #2980B9, #6DD5FA, #2980B9);
+}
+
+.avatar-img {
+  height: 100%;
+  max-height: 400px;
+
+  padding-top: 1em;
+  margin: 0.5em;
+  border-radius: 8px;
+
+  transition: 0.4s;
+}
+
+.avatar-img:hover {
+  -webkit-box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+
+.content-banner{
+  width: 75%;
+  margin: auto;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #fff;
+  opacity: 90%;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.content-banner h1 {
+  font-size: 4em;
+  font-weight: bold;
+  color: black;
+}
+
+.content-banner hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.content-banner p {
+  color: black;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.content-links {
   display: flex;
-  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+  width: 50%;
+}
+.content-links a{
+  color: black;
+  transition: 0.4s;
+}
+
+.content-links a:hover{
+  opacity: 0.8;
+}
+
+.button:hover{
+  filter: brightness(80%);
+}
+
+/* Project Page*/
+.projects-grid {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5em;
+}
+/* Contact Page*/
+.contact-container{
+width: 100%;
+height: 100%;
+margin: auto;
+justify-content: center;
+padding-top: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  height: 550px;
+  background: white;
+  color: black;
+  border: 5px solid #6DD5FA;
+  margin-bottom: 1em;
+  opacity: 90%;
+  border-radius: 8px;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-grid h1 {
+  font-family: 'Anton', sans-serif;
+  color: black;
+  text-shadow: none;
 }
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list {
+  margin-top: 0.3em;
+}
+.contact-list a {
+  color: black;
+  font-Size: 1em;
+  font-Weight: bold;
+}
+.shadow-hover:hover {
+transition: 0.5s;
+border-radius: 5px;
+
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* Aboutme Page*/
+.aboutme-container{
+height: 100%;
+width: 100%;
+}
+
+.aboutme-left{
+ padding-top: 3em;
+ color: white;
+ font-size: 1em;
+ background: #020d14;
+ opacity: 95%;
+ 
+-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  
+}
+
+.aboutme-right{
+  width: 100%;
+  height:100%;
+padding: 1.5em;
+background: #020d14;
+color: white;
+opacity: 95%;
+
+
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.aboutme-right img {
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
